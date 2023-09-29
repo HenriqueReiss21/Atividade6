@@ -10,4 +10,17 @@ function maioresQueMedia(...lista){ //função que devolve os valores que são m
     
 }
 
-maioresQueMedia(...lista)
+function menorValor(...lista){ //função que encontra o menor valor da lista
+    let menor = lista[0]
+    lista.forEach(numero => {
+        if(numero < menor){
+            menor = numero
+        }
+    });
+
+    console.log(menor)
+}
+
+//maioresQueMedia(...lista)
+
+menorValor(...lista)
